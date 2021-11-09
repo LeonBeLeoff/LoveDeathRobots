@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Menu</title>
+    <link rel="stylesheet" type="text/css" href="css/menu_style.css">
+    <link rel="stylesheet" type="text/css" href="css/menu_grid.css">
+    <link rel="javascript" type="text/java" href="js/main.js">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="container">
+
+      <!-- titeln -->
+
+      <section class="one">
+        <h1>Menu</h1>
+      </section>
+
+      <!-- knapparna -->
+
+      <section class="two">
+        <button type="button" name="button" onclick="window.open('https://help.netflix.com/en/')">Contact</button> <!-- knapp för contact -->
+      </section>
+      <section class="three">
+        <button type="button" name="button" onclick="window.open('https://www.m1.com.sg/support/faq/netflix-faq')">FAQ</button> <!-- knapp för FAQ -->
+      </section>
+      <section class="four">
+        <button type="button" name="button" onclick="previous()">Back</button> <!-- tillbaka-knapp -->
+        <script> // lite fult då det är javascript fast inline men tänker att det är bättre än att bara ha tre rader i javascript och sedan helt tomt
+          function previous() { // onclick-attributet skickar ut meddelande vid ett klick och scriptet säger att en funktion ska ske när meddelandet tas emot vilket är: window.history.back(); som backar användaren till den föregående webbsidan
+          window.history.back();
+          }
+        </script>
+      </section>
+    </div>
+  </body>
+</html>

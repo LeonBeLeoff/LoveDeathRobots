@@ -1,0 +1,42 @@
+/* förklaringar till nästan allt ligger i style.css */
+
+body {
+  background: linear-gradient(0deg, black, black);
+  background-color: inherit;
+  color: inherit;
+}
+
+/* all text */
+
+* {
+  margin: 0;
+  font-family: "Bebas Neue", cursive;
+  background-color: inherit;
+  color: white;
+}
+
+h1 {
+  font-size: 10em;
+  text-align: center;
+}
+
+/* listan med knapparna */
+
+.one, .two, .three {
+  justify-content: center;
+}
+
+button {
+  width: 100%;
+  height: 100%;
+  font-size: 5em;
+  background-color: black;
+  color: inherit;
+  border: 0.5vh solid;
+}
+
+button:hover {
+  border: inherit;
+  background-color: white;
+  color: black;
+}

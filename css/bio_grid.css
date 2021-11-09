@@ -1,0 +1,57 @@
+.container {
+  display: grid; /* ändrar display-typen till grid */
+  grid-template-columns: 0.5fr repeat(4, 1fr) 0.5fr; /* definerar kolumner */
+  grid-template-rows: 0.5fr 1.5fr repeat(3, 2fr) 0.5fr; /* definerar rader */
+}
+
+/* headern */
+
+header { /* definerar från vilka linjer i grid selectorn ska finnas inom */
+  grid-column: 1/-1;
+  grid-row: 1/2;
+}
+
+/* titeln */
+
+.one {
+  grid-column: 1/-1;
+  grid-row: 2/3;
+}
+
+/* bild */
+
+.two {
+  grid-column: 2/6;
+  grid-row: 3/4;
+}
+
+/* brödtext */
+
+.three {
+  grid-column: 2/6;
+  grid-row: 4/5;
+}
+
+/* klipp */
+
+.four {
+  grid-column: 1/-1;
+  grid-row: 5/6;
+}
+
+/* footer */
+
+footer {
+  grid-column: 1/-1;
+  grid-row: 6/7;
+}
+
+/* media query */
+
+@media only screen and (max-width: 480px) { /* Används för att göra hemsidan passande för alternativ skärmstorlek */
+  .container {
+    grid-template-columns: 0.5fr repeat(4, 1fr) 0.5fr;
+    grid-template-rows: 0.3fr 0.5fr 0.7fr 2fr 0.5fr 0.4fr;
+    grid-gap: 1em; /* definerar mellanrum mellan rader och kolumner */
+  }
+}

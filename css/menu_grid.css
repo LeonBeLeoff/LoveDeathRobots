@@ -1,0 +1,43 @@
+.container {
+  display: grid; /* ändrar display-typen till grid */
+  grid-template-columns: 2fr 4fr 2fr; /* definerar kolumner */
+  grid-template-rows: 0.2fr repeat(3, 0.9fr); /* definerar rader */
+  grid-gap: 2em; /* definerar mellanrum mellan rader och kolumner */
+}
+
+/* titeln */
+
+.one { /* definerar från vilka linjer i grid selectorn ska finnas inom */
+  grid-column: 1/-1;
+  grid-row: 1/2;
+}
+
+/* "Contact" */
+
+.two {
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
+
+/* "FAQ" */
+
+.three {
+  grid-column: 2/3;
+  grid-row: 3/4;
+}
+
+/* "Back" */
+
+.four {
+  grid-column: 2/3;
+  grid-row: 4/5;
+}
+
+/* media query */
+
+@media only screen and (max-width: 480px) { /* Används för att göra hemsidan passande för alternativ skärmstorlek */
+  .container {
+    grid-template-columns: 1fr 10fr 1fr;
+    grid-template-rows: 0.2fr repeat(3, 1fr) 0.1fr;
+  }
+}

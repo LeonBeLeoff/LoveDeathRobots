@@ -1,0 +1,77 @@
+.container {
+  display: grid; /* ändrar display-typen till grid */
+  grid-template-columns: 0.5fr repeat(4, 1fr) 0.5fr; /* definerar kolumner */
+  grid-template-rows: 0.5fr 2.5fr 3.5fr repeat(5, 4fr) 2fr 1fr; /* definerar rader */
+}
+
+/* headern */
+
+header { /* definerar från vilka linjer i grid selectorn ska finnas inom */
+  grid-column: 1/-1;
+  grid-row: 1/2;
+}
+
+/* titeln */
+
+.one {
+  grid-column: 2/6;
+  grid-row: 2/3;
+}
+
+/* trailern */
+
+.two, .trailer {
+  grid-column: 2/6;
+  grid-row: 3/4;
+}
+
+/* brödtexten med bilder */
+
+.three {
+  grid-column: 1/-1;
+  grid-row: 4/5;
+}
+
+.four {
+  grid-column: 1/-1;
+  grid-row: 5/6;
+}
+
+.five {
+  grid-column: 1/-1;
+  grid-row: 6/7;
+}
+
+.six {
+  grid-column: 1/-1;
+  grid-row: 7/8;
+}
+
+.seven {
+  grid-column: 1/-1;
+  grid-row: 8/9;
+}
+
+/* knappen till episoderna */
+
+.eight {
+  grid-column: 2/6;
+  grid-row: 9/10;
+}
+
+/* footern */
+
+footer {
+  grid-column: 1/-1;
+  grid-row: 10/11;
+}
+
+/* media query */
+
+@media only screen and (max-width: 480px) { /* Används för att göra hemsidan passande för alternativ skärmstorlek */
+  .container {
+    display: grid;
+    grid-template-columns: 0.5fr repeat(4, 1fr) 0.5fr;
+    grid-template-rows: 0.5fr 1fr 1.2fr repeat(5, 4fr) 1fr 0.7fr;
+  }
+}

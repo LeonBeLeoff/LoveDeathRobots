@@ -1,0 +1,169 @@
+body {
+  background: linear-gradient(0deg, black, black); /* Just nu är backgrunden bara svart men har denna value ifall jag vill eventuellt ha mer lite mer styling. Denna gradient value gör att det blir en övergång mellan två färger. Man kan bestämma i vilken vinkel denna övergång ska ske i och om den ska vara linjär eller inte o.s.v. */
+  background-color: inherit; /* ska inte ha specifierad value utan ärver från redan etablerade values. Egentligen onödig här men det är ifall jag inte skulle vilja ha det ovanstående propertyn */
+  color: inherit; /* ska inte ha specifierad value utan ärver från redan etablerade values */
+}
+
+/* text */
+
+* {
+  margin: 0; /* nollställer margin för att kunna styla enklare */
+  font-family: "Bebas Neue", cursive; /* typsnitt från google och dessutom en backup i formen av cursive om det första värdet inte skulle fungera */
+  background-color: inherit; /* ska inte ha specifierad value utan ärver från redan etablerade values */
+  color: white; /* färg */
+}
+
+h1 {
+  font-size: 10em; /* definerar storlek */
+  text-align: center; /* centerar texten */
+}
+
+p {
+  text-align: justify; /* sträcker på brödtexten för att fördela den jämt över sidan */
+  font-size: 1.5em; /* definerar storlek */
+  line-height: 1.5em; /* definerar höjd mellan rader */
+  font-family: 'Raleway', sans-serif; /* typsnitt från google och dessutom en backup i formen av sans-serif om det första värdet inte skulle fungera */
+  font-weight: bolder; /* gör textens symboler tjockare/fyllig */
+}
+
+/* headern */
+
+header {
+  width: 100%; /* sträcker bredden över hela webbsidan bredd */
+  position: fixed; /* faställer positionen i förhållande med skärmen */
+  background-color: black; /* bakgrundsfärg */
+  color: inherit; /* ska inte ha specifierad value utan ärver den från redan etablerade values */
+  display: flex; /* skapar ny typ av display inom selectorn som är av typen flexbox som är bra att använda för enskilda rader och columner */
+  justify-content: space-between; /* tvingar jämnt mellanrum mellan elementen inom flexbox */
+}
+
+header p {
+  margin-top: 0.75em; /* definerar storlek på margin */
+  letter-spacing: 0.5em; /* definerar mellanrummet mellan bokstäverna */
+  font-size: 1.2em; /* definerar storlek */
+  font-family: 'Rock Salt', cursive; /* typsnitt från google och dessutom en backup i formen av cursive om det första värdet inte skulle fungera */
+  background-color: inherit; /* ska inte ha specifierad value utan ärver den från redan etablerade values */
+  color: yellow; /* färg */
+}
+
+/* bilden längst till vänster i headern */
+
+.logo {
+  width: 7em; /* definerar bredden */
+}
+
+/* bilden längst till höger i headern */
+
+.menu {
+  margin: 0.5em; /* definerar storlek på margin */
+  width: 3em; /* definerar bredd */
+}
+
+/* footern */
+
+footer {
+  position: fixed; /* faställer positionen i förhållande med skärmen */
+  bottom: 1em; /* sätter elementet en viss längd ifrån botten */
+  height: 10vh; /* definerar höjd */
+  border-radius: 0 1em 1em 0; /* definerar rundheten hos hörnen och vilka hörn som ska ha rundhet */
+  background-color: white; /* bakgrundsfärg */
+  color: inherit; /* ska inte ha specifierad value utan ärver den från redan etablerade values */
+}
+
+/* trailern */
+
+.trailer {
+  border: 0; /* tar bort bordern */
+  width: 100%; /* sträcker bredden över hela griddens bredd */
+  height: 100%; /* sträcker höjden över hela griddens höjd */
+  justify-content: center; /* centerar elementet */
+}
+
+/* brödtexten med bilder */
+
+section p, section img {
+  margin: 1em; /* definerar storlek på margin */
+}
+
+.three, .four, .five, .six, .seven {
+  margin: auto; /* sätter automatisk margin */
+  background-color: rgb(30, 30, 30); /* bakgrundsfärg */
+  color: inherit; /* ska inte ha specifierad value utan ärver den från redan etablerade values */
+}
+
+.img {
+  width: 50vw; /* sträcker bredden till hälften av sidans bredd */
+}
+
+.left {
+  margin-left: 0; /* sätter margin till noll åt vänster */
+  border-radius: 0 1em 1em 0; /* definerar rundheten hos hörnen och vilka hörn som ska ha rundhet */
+  float: left; /* skjuter elementet åt önskat håll och låter andra element täcka tomrummet*/
+}
+
+.right {
+  margin-right: 0; /* sätter margin till noll åt höger */
+  border-radius: 1em 0 0 1em; /* definerar rundheten hos hörnen och vilka hörn som ska ha rundhet */
+  float: right; /* skjuter elementet åt önskat håll och låter andra element täcka tomrummet*/
+}
+
+/* knapp på botten till intern adress */
+
+.ep {
+  justify-content: center; /* centerar elementet */
+  width: 100%; /* sträcker bredden över hela griddens bredd */
+  height: 100%; /* sträcker höjden över hela griddens höjd */
+  font-size: 20vw; /* definerar storlek */
+  background-color: black; /* bakgrundsfärg */
+  color: inherit; /* ska inte ha specifierad value utan ärver den från redan etablerade values */
+  border: 0.5vh solid; /* definerar borderns storlek, färg och stil */
+}
+
+/* knappen i footern */
+
+.watch {
+  float: left; /* skjuter elementet åt önskat håll och låter andra element täcka tomrummet*/
+  margin: 0.3em; /* definerar storlek på margin */
+  font-size: 2.5em; /* definerar storlek */
+  background-color: red; /* bakgrundsfärg */
+  color: inherit; /* ska inte ha specifierad value utan ärver den från redan etablerade values */
+  border-radius: 0.25em; /* definerar rundheten hos hörnen och vilka hörn som ska ha rundhet */
+  border: 0.5vh solid black; /* definerar borderns storlek, färg och stil */
+}
+
+/* alla knappar */
+
+.watch:hover, .ep:hover, header img:hover {
+  opacity: 0.8; /* sätter genomskinligheten till 80% när man hovrar över elementen nämnda som selectors */
+}
+
+/* media query */
+
+@media only screen and (max-width: 480px) { /* Används för att göra hemsidan passande för alternativ skärmstorlek */
+
+  /* titeln */
+
+  h1 {
+    font-size: 5em; /* definerar storlek */
+  }
+
+  /* brödtexten med bilder */
+
+  p {
+    font-size: 1em; /* definerar storlek */
+  }
+
+  .img {
+    width: 90vw; /* sträcker bredden nästan över hela webbsidan bredd för att lämna rum åt margin */
+    margin-left: 5vw; /* sätter margin åt höger */
+    margin-right: 5vw; /* sätter margin åt vänster */
+    border-radius: 1em 1em 1em 1em; /* definerar rundheten hos hörnen och vilka hörn som ska ha rundhet */
+  }
+
+  /* knappen i footern */
+
+  .watch {
+    float: left; /* skjuter elementet åt önskat håll och låter andra element täcka tomrummet*/
+    margin: 0.2em; /* definerar margin */
+  }
+}

@@ -1,0 +1,65 @@
+.container {
+  display: grid; /* ändrar display-typen till grid */
+  grid-template-columns: 0.5fr repeat(4, 1fr) 0.5fr; /* definerar kolumner */
+  grid-template-rows: 0.5fr 1fr repeat(4, 2fr) 1fr; /* definerar rader */
+  grid-gap: 4em; /* definerar mellanrum mellan rader och kolumner */
+}
+
+/* headern */
+
+header { /* definerar från vilka linjer i grid selectorn ska finnas inom */
+  grid-column: 1/-1;
+  grid-row: 1/2;
+}
+
+/* titeln */
+
+.one {
+  grid-column: 1/-1;
+  grid-row: 2/3;
+}
+
+/* knapp-rad 1 */
+
+.two {
+  grid-column: 1/-1;
+  grid-row: 3/4;
+}
+
+/* knapp-rad 2 */
+
+.three {
+  grid-column: 1/-1;
+  grid-row: 4/5;
+}
+
+/* knapp-rad 3 */
+
+.four {
+  grid-column: 1/-1;
+  grid-row: 5/6;
+}
+
+/* knapp-rad 4 */
+
+.five {
+  grid-column: 1/-1;
+  grid-row: 6/7;
+}
+
+/* footern */
+
+footer {
+  grid-column: 1/-1;
+  grid-row: 7/8;
+}
+
+/* media query */
+
+@media only screen and (max-width: 480px) { /* Används för att göra hemsidan passande för alternativ skärmstorlek */
+  .container {
+    grid-template-columns: 0.5fr repeat(4, 1fr) 0.5fr;
+    grid-template-rows: 0.5fr 0.5fr 4fr 4fr 4fr 4fr 0.7fr;
+    grid-gap: 0; /* nollställer mellanrummet */
+  }
+}
