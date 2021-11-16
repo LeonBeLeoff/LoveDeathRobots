@@ -26,6 +26,11 @@ p {
   font-weight: bolder; /* gör textens symboler tjockare/fyllig */
 }
 
+a { /* tar bort all style som länken har */
+  color: inherit;
+  text-decoration: inherit;
+}
+
 /* headern */
 
 header {
