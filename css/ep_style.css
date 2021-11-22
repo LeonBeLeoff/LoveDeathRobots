@@ -106,7 +106,7 @@ footer {
 }
 
 .ep1 {
-  background-image: url("../img/ldr_img6.jpg"); /* infogar bild på knappen. Adressen börjar med ../ vilket är betyder att fil-pathen börjar från föregående mapp */
+  background-image: url("../img/ldr_img6.jpeg"); /* infogar bild på knappen. Adressen börjar med ../ vilket är betyder att fil-pathen börjar från föregående mapp */
 }
 
 .ep2 {
