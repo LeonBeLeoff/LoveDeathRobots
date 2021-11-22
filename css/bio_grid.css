@@ -48,7 +48,7 @@ footer {
 
 /* media query */
 
-@media only screen and (max-width: 480px) { /* Används för att göra hemsidan passande för alternativ skärmstorlek */
+@media only screen and (max-width: 500px) { /* Används för att göra hemsidan passande för alternativ skärmstorlek */
   .container {
     grid-template-columns: 0.5fr repeat(4, 1fr) 0.5fr;
     grid-template-rows: 0.3fr 0.5fr 0.7fr 2fr 0.5fr 0.4fr;

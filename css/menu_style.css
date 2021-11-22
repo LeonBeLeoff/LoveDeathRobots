@@ -20,6 +20,11 @@ h1 {
   text-align: center;
 }
 
+a { /* tar bort all style som länken har */
+  color: inherit;
+  text-decoration: inherit;
+}
+
 /* listan med knapparna */
 
 .one, .two, .three {

@@ -20,6 +20,11 @@ h1 {
   text-align: center;
 }
 
+a { /* tar bort all style som länken har */
+  color: inherit;
+  text-decoration: inherit;
+}
+
 /* headern */
 
 header {
@@ -32,7 +37,7 @@ header {
 }
 
 header p {
-  margin-top: 0.75em;
+  margin-top: 0.25em;
   letter-spacing: 0.5em;
   font-size: 1.2em;
   font-family: 'Rock Salt', cursive;
@@ -159,7 +164,7 @@ section button:hover {
 
 /* media query */
 
-@media only screen and (max-width: 480px) { /* Används för att göra hemsidan passande för alternativ skärmstorlek */
+@media only screen and (max-width: 500px) { /* Används för att göra hemsidan passande för alternativ skärmstorlek */
 
     /* titeln */
 
@@ -186,5 +191,9 @@ section button:hover {
   .watch {
     float: left;
     margin: 0.2em;
+  }
+
+  .extra { /* tar bort dem extra knapparna för mobil då det blir för klottrigt */
+    display: none
   }
 }

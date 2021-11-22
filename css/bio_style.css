@@ -20,6 +20,11 @@ h1 {
   text-align: center;
 }
 
+a { /* tar bort all style som länken har */
+  color: inherit;
+  text-decoration: inherit;
+}
+
 p {
   text-align: justify;
   font-size: 1.5em;
@@ -52,6 +57,7 @@ header p {
 
 .logo {
   width: 7em;
+  display: inline-grid;
 }
 
 /* knappen i mitten av headern */
@@ -138,7 +144,7 @@ header img:hover, button:hover{
 
 /* media query */
 
-@media only screen and (max-width: 480px) { /* Används för att göra hemsidan passande för alternativ skärmstorlek */
+@media only screen and (max-width: 500px) { /* Används för att göra hemsidan passande för alternativ skärmstorlek */
 
   /* titeln */
 
@@ -163,5 +169,9 @@ header img:hover, button:hover{
   .watch {
     float: left;
     margin: 0.2em;
+  }
+
+  .extra { /* tar bort dem extra knapparna för mobil då det blir för klottrigt */
+    display: none
   }
 }

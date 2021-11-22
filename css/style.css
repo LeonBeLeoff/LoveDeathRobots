@@ -144,7 +144,7 @@ section p, section img {
 
 /* media query */
 
-@media only screen and (max-width: 480px) { /* Används för att göra hemsidan passande för alternativ skärmstorlek */
+@media only screen and (max-width: 500px) { /* Används för att göra hemsidan passande för alternativ skärmstorlek */
 
   /* titeln */
 
@@ -170,5 +170,9 @@ section p, section img {
   .watch {
     float: left; /* skjuter elementet åt önskat håll och låter andra element täcka tomrummet*/
     margin: 0.2em; /* definerar margin */
+  }
+
+  .extra { /* tar bort dem extra knapparna för mobil då det blir för klottrigt */
+    display: none
   }
 }

@@ -35,7 +35,7 @@
 
 /* media query */
 
-@media only screen and (max-width: 480px) { /* Används för att göra hemsidan passande för alternativ skärmstorlek */
+@media only screen and (max-width: 500px) { /* Används för att göra hemsidan passande för alternativ skärmstorlek */
   .container {
     grid-template-columns: 1fr 10fr 1fr;
     grid-template-rows: 0.2fr repeat(3, 1fr) 0.1fr;

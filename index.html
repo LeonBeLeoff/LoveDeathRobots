@@ -25,7 +25,9 @@
 
       <header> <!-- semantiskt element istället för div -->
         <img src="img/love_death_robots_logo.png" alt="Error displaying Home Button" class="logo" onclick="location.href='#top';" onkeypress="location.href='#top';" role="button"> <!-- loggan längst till vänster på headern som genom onclick skickar användaren till specifierad adress, i detta fall intern -->
+        <a href="#top" class="extra"><p>Top</p></a> <!-- knapp till toppen av sidan -->
         <a href="./list.html"><p>VOL.2</p></a> <!-- texten på mitten av headern -->
+        <a href="#bottom" class="extra"><p>Bottom</p></a> <!-- knapp till botten av sidan -->
         <img src="img/navbar_icon_white.png" alt="Error displaying Navbar Icon" class="menu" onkeypress="location.href='./menu.html';" role="button"> <!-- knappen för menyn längst till höger på headern som genom onclick skickar användaren till specifierad adress, i detta fall intern -->
       </header>
 
@@ -68,7 +70,7 @@
 
       <!-- knapp till episoderna  -->
 
-      <section class="eight"> <!-- semantiskt element istället för div -->
+      <section class="eight" id="bottom"> <!-- semantiskt element istället för div -->
         <button type="button" name="button" class="ep" onclick="location.href='./ep.html';">Episodes</button> <!-- knappen näst längst till vänster på headern som genom onclick skickar användaren till specifierad adress, i detta fall intern -->
       </section>
 
