@@ -82,6 +82,11 @@ footer {
   width: 100%; /* sträcker bredden över hela griddens bredd */
   height: 100%; /* sträcker höjden över hela griddens höjd */
   justify-content: center; /* centerar elementet */
+  border-radius: 0.25em;
+  font-size: 25vw;
+  background-image: url("../img/yt2.jpg");
+  background-color: white;
+  color: white;
 }
 
 /* brödtexten med bilder */
@@ -140,6 +145,12 @@ section p, section img {
 
 .watch:hover, .ep:hover, header img:hover {
   opacity: 0.8; /* sätter genomskinligheten till 80% när man hovrar över elementen nämnda som selectors */
+}
+
+.trailer:hover {
+  background: none;
+  background-color: white;
+  color: black;
 }
 
 /* media query */
