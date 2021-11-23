@@ -30,12 +30,12 @@
       </section>
       <section class="four">
         <button type="button" name="button" onclick="previous()">Back</button> <!-- tillbaka-knapp -->
-        <script> // lite fult då det är javascript fast inline men tänker att det är bättre än att bara ha tre rader i javascript och sedan helt tomt
-          function previous() { // onclick-attributet skickar ut meddelande vid ett klick och scriptet säger att en funktion ska ske när meddelandet tas emot vilket är: window.history.back(); som backar användaren till den föregående webbsidan
-          window.history.back(); // scriptet är längst ner då javascript stannar laddandet medan det körs
-          }
-        </script>
       </section>
     </div>
+    <script> // lite fult då det är javascript fast inline men tänker att det är bättre än att bara ha tre rader i javascript och sedan helt tomt
+      function previous() { // onclick-attributet skickar ut meddelande vid ett klick och scriptet säger att en funktion ska ske när meddelandet tas emot vilket är: window.history.back(); som backar användaren till den föregående webbsidan
+      window.history.back(); // scriptet är längst ner då javascript stannar laddandet medan det körs
+      }
+    </script>
   </body>
 </html>
