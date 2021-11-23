@@ -27,6 +27,7 @@ p {
 }
 
 a { /* tar bort all style som länken har */
+  background-color: inherit;
   color: inherit;
   text-decoration: inherit;
 }
@@ -85,7 +86,7 @@ footer {
   border-radius: 0.25em;
   font-size: 25vw;
   background-image: url("../img/yt2.jpg"); /* sätter bakgrunden av knappen till en bild */
-  background-color: white;
+  background-color: inherit;
   color: white;
 }
 
