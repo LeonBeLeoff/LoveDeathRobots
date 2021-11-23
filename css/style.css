@@ -84,7 +84,7 @@ footer {
   justify-content: center; /* centerar elementet */
   border-radius: 0.25em;
   font-size: 25vw;
-  background-image: url("../img/yt2.jpg");
+  background-image: url("../img/yt2.jpg"); /* sätter bakgrunden av knappen till en bild */
   background-color: white;
   color: white;
 }
