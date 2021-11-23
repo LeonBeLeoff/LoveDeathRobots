@@ -7,7 +7,6 @@
     <title>Menu</title>
     <link rel="stylesheet" type="text/css" href="css/menu_style.css">
     <link rel="stylesheet" type="text/css" href="css/menu_grid.css">
-    <link rel="javascript" type="text/java" href="js/main.js">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
@@ -39,7 +38,7 @@
         <button type="button" name="button" onclick="previous()">Back</button> <!-- tillbaka-knapp -->
         <script> // lite fult då det är javascript fast inline men tänker att det är bättre än att bara ha tre rader i javascript och sedan helt tomt
           function previous() { // onclick-attributet skickar ut meddelande vid ett klick och scriptet säger att en funktion ska ske när meddelandet tas emot vilket är: window.history.back(); som backar användaren till den föregående webbsidan
-          window.history.back();
+          window.history.back(); // scriptet är längst ner då javascript stannar laddandet medan det körs
           }
         </script>
       </section>
