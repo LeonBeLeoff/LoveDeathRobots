@@ -22,7 +22,7 @@ p {
   text-align: justify; /* sträcker på brödtexten för att fördela den jämt över sidan */
   font-size: 1.5em; /* definerar storlek */
   line-height: 1.5em; /* definerar höjd mellan rader */
-  font-family: 'Raleway', sans-serif; /* typsnitt från google och dessutom en backup i formen av sans-serif om det första värdet inte skulle fungera */
+  font-family: sans-serif; /* typsnitt från google och dessutom en backup i formen av sans-serif om det första värdet inte skulle fungera */
   font-weight: bolder; /* gör textens symboler tjockare/fyllig */
 }
 
